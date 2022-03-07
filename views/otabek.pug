@@ -1,0 +1,16 @@
+extends layout
+block content
+    body 
+     #index
+      .container 
+       .row 
+        each data in db
+          .col-lg-3.col-md-4.col-sm-6.my-3.col-12
+            .card   
+              .card-img
+                img(src="images/"+ data.img, alt="")
+              p #{name}
+              .card-title.text-center 
+                h4=data.title   
+              a(href="/delete/" + data.id).btn.btn-danger Delete
+    

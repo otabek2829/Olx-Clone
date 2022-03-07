@@ -1,0 +1,22 @@
+extends layout
+block content
+    body 
+     #index
+      .container 
+       include search
+       .d-flex.justify-content-center.mt-5
+         .spinner-border.text-light.hide(role='status')
+       .row.justify-content-start.product_item 
+        each data in db
+          .col-lg-3.col-md-4.col-sm-6.my-3.col-12.my-lg-3.wrapper
+            .card   
+              .card-img.card-list-img
+                img(src="images/"+ data.img, alt="")
+              p #{name}
+              .card-title.text-center 
+                h4=data.title   
+                p #{data.price} so'm
+                p.category Toifa:
+                 span #{data.category}     
+                p.time Yuklangan Sana:  #{data.dataTime.toLocaleDateString()} | 
+                    span.text-center= data.dataTime.toLocaleTimeString()

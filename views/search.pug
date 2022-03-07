@@ -1,0 +1,39 @@
+#search-page 
+  form(method='post' action="/search") 
+    .container 
+      .search-header 
+        .row.justify-content-between.align-items-center.h-100
+          .col-7.h-100
+            .search-inp.h-100 
+              input(type="text" placeholder='Поиск...' ).h-100
+              i.fa-solid.fa-xmark.clear
+          .col-3.h-100
+            .search-country.h-100 
+              input(type="text" value='Весь Узбекистан').h-100
+              .i.fa-solid.fa-location-dot
+          .col-2.h-100
+            .search-btn.h-100 
+              button.h-100 #{current + ` +` } Найти 
+                .i.fa-solid.fa-magnifying-glass.mx-2
+      .search-body-filter  
+        h3 Фильтры
+        .categoryWrapper 
+          .row 
+            .col-xl-2.col-lg-3.col-md-4
+               label.form-label(for='exampleInputPassword1' ) Mahsulotlar Ro'yhati
+               span.i.fa-solid.fa-angle-down
+               select(name="category"  required id="select").form-control 
+                option(value="All") Hammasi 
+                option(value="Avtomobil") Avtomobil  
+                option(value="Maishiy Texnika") Maishiy Texnika  
+                option(value="Hayvon") Hayvon  
+                option(value="Kiym-Kechak")  Kiym-Kechak 
+                option(value="Asbos-Uskuna") Asbos-Uskuna 
+                option(value="Telefon") Telefon
+                option(value="Noutbook") Noutbook 
+                option(value="Ehtiyot Qism") Ehtiyot Qism
+                option(value="Idish-Tovoq") Idish-Tovoq
+                option(value="Qurilish moli") Qurilish moli
+                option(value="Parfumeriya") Parfumeriya
+                option(value="Oziq-ovqat") Oziq-ovqat
+                option(value="Boshqa") Boshqa  

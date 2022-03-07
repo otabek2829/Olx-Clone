@@ -1,0 +1,117 @@
+@media (min-width: 1200px) {
+  #index .card-list-img img {
+    width: 50% !important;
+    height: auto;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+.show{
+  display: block !important;
+  transition: 500ms;
+}
+#search-page {
+  padding : 30px 0px;
+  width: 100% !important;
+  border-bottom: 1px solid #fff;
+  
+}
+#search-page .search-header {
+  width: 100%;
+  height: 72px !important;
+}
+
+#search-page .search-header .search-country {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -15px;
+}
+#search-page .search-header .search-inp input {
+  padding-left: 15px;
+}
+#search-page .search-header .search-inp input:focus,
+#search-page .search-header .search-country input:focus,
+#search-page .search-header .search-btn button:focus {
+  border: none !important;
+  outline: none;
+}
+
+#search-page .search-header .search-inp input,
+#search-page .search-header .search-btn button {
+  position: relative;;
+  width: 100% !important;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+#search-page .search-header .clear{
+  position: absolute;
+  color: #000;
+  top: 120px;
+  left: 53%;
+  font-size: 38px;
+  display: none;
+  cursor: pointer;
+}
+
+#search-page .search-header .search-country input {
+  padding-left: 30px;
+  width: 100%;
+  color: #002f34;
+  font-weight: 500;
+  font-size: 18px;
+  border: none !important;
+  cursor: text;
+  border-radius: 5px;
+}
+#search-page .search-header .search-btn {
+  padding: 0 10px;
+  margin-left: -40px;
+}
+#search-page .search-header .search-btn button {
+    color: #002f34;
+    font-size: 19px;
+    border-radius: 5px;
+    transition: 500ms;
+    font-weight: 500;
+}
+#search-page .search-header .search-btn button:hover{
+    background-color: #002f34;
+    color: #fff;
+}
+#search-page .search-header .search-country .i {
+  position: absolute;
+  left: 4%;
+  color: #000;
+  font-size: 20px;
+}
+
+/* filter style starting */
+#search-page .search-body-filter {
+  margin-top: 50px;
+}
+#search-page .search-body-filter .categoryWrapper{
+  margin-left: 50px;
+}
+
+#search-page .search-body-filter .categoryWrapper select{
+  background-color: #fff !important;
+  position: relative;
+}
+#search-page .search-body-filter .categoryWrapper span{
+  position: absolute;
+  top: 304px;
+  font-size: 22px;
+  color: #000;
+  z-index: 100;
+  padding-left: 15px;
+}
+
+
+
+
