@@ -51,6 +51,7 @@ router.get('/delete/:id', async (req, res) => {
 
 router.get('/list', (req, res) => {
   const promise = dbProduct.find({})
+  
     .then(data => {
       let curent = data.length
       res.render('list', {

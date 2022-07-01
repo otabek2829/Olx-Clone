@@ -62,6 +62,8 @@ router.get('/login', forwardAuthenticated, (req, res) => {
 })
 //Login Post
 router.post('/login', forwardAuthenticated, (req, res, next) => {
+  console.log(req.body)
+  console.log('Otabek')
   if (req.body.login === '' || req.body.password === '') {
     req.flash('danger', 'Bo\'sh qoldirish mumkin emas');
     res.redirect('/register/login')
